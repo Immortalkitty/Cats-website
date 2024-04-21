@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" type='text/css' href="styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+</head>
+<body>
+    
+    <header class='tytul_strony'>
+        <h1>Kontakt i linki</h1>
+        <nav class='inne-ustawienia'>
+                <a  href="Strona_glowna.html">Strona Główna</a>
+                <a href="Rasy_kotow.html">Rasy warte uwagi</a>
+                <div class="wysuwana_zawartosc">
+                    <button class="guzik_wysuwania active">Więcej...</button>
+                    <div class="rozwijana-zawartosc">
+                      <a  href="Formularz_adopcji.html">Formularz adopcyjny</a>
+                      <a class='active' href="Kontakt.html">Kontakt i linki</a>
+                      <a href="Koty_w_kulturze.html">Koty w kulturze</a>
+                    </div>
+                  </div>         
+        </nav>
+    </header>
+
+    <nav class="prawe-menu">
+        <ol>
+            <li><a  href="Strona_glowna.html">Strona Główna</a></li>
+            <li><a  href="Rasy_kotow.html">Rasy warte uwagi</a></li>        
+        <li><a class='active' href="#">Więcej...</a>
+        <ul>
+            <li><a  href="Formularz_adopcji.html">Formularz adopcyjny</a></li>
+            <li><a class='active' href="Kontakt.html">Kontakt i linki</a></li>
+            <li><a href="Koty_w_kulturze.html">Koty w kulturze</a></li>
+        </ul>
+    </ol>    
+    </nav>
+
+<div class="pojemnik_glowny">
+        <div class="artykuly smaller_gap">
+            <h2>Jeśli Masz jakieś sugestie na temat strony, podziel się swoją opinią tutaj 😊!</h2>
+        </div>
+        <div class="artykuly bigger_gap">
+        <form id='kontakt' action="action.php" method='get' enctype='text/plain'>
+        <div>
+            <label for="name">Nazwa:</label><br>
+            <input type="text" name="name" id="name"><br>
+        </div>
+        <div>
+        <label for="email">Podaj email:</label><br>
+        <input type="email" name="email" id="email"><br>
+        </div>
+        <div>
+        <label for="text">Treść wiadomości:</label>
+        <textarea name="text" id="text" cols="31" rows="10"></textarea>
+        </div>
+        <input type="reset" value="Wyczyść">
+        <input type="submit" value="Wyślij">
+        </form>
+    </div>
+    <div class="artykuly smaller_gap">
+        <h2>Bibliografia, źródła i coś co może zaciekawić głodnych wiedzy kociarzy:</h2>
+       <p>
+       <a target="_blank" href= "http://www.kocidom.waw.pl/starozytny-egipt/442-kot-w-staroytnym-egipcie.html">http://www.kocidom.waw.pl/starozytny-egipt/442-kot-w-staroytnym-egipcie.html</a> <br>
+       <a target="_blank" href="https://pl.wikipedia.org/wiki/Kot_domowy">https://pl.wikipedia.org/wiki/Kot_domowy </a>     <br>
+       <a target="_blank" href= "https://www.whiskas.pl/rasy-kotow"> https://www.whiskas.pl/rasy-kotow</a> <br>
+       <a target="_blank" href= "https://www.zooplus.pl/magazyn/koty/rasy-kotow"> https://www.zooplus.pl/magazyn/koty/rasy-kotow-(źródło zdjęć niektórych ras) </a> <br>
+       <a target="_blank" href= "https://dzikiezycie.pl/archiwum/2004/pazdziernik-2004/dzikie-koty-w-polsce-zbik"> https://dzikiezycie.pl/archiwum/2004/pazdziernik-2004/dzikie-koty-w-polsce-zbik </a> <br>
+       <a target="_blank" href= "https://pl.wikipedia.org/wiki/Tygrys_azjatycki"> https://pl.wikipedia.org/wiki/Tygrys_azjatycki </a> <br>
+       <a target="_blank" href= "https://bestlifeonline.com/funniest-cat-memes-ever/"> https://bestlifeonline.com/funniest-cat-memes-ever-(źródło memów) </a> <br>
+    </p> 
+    
+    </div>
+</div>
+<footer><h2>Stworzone przez Katarzynę Szczerbę</h2></footer>
+</body>
+</html>

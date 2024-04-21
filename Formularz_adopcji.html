@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type='text/css' href="styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta adopcyjna</title>
+</head>
+<body>
+
+    <header class='tytul_strony'>
+        <h1>Adoptuj kota!</h1>
+        <nav class='inne-ustawienia'>
+                <a  href="Strona_glowna.html">Strona Główna</a>
+                <a href="Rasy_kotow.html">Rasy warte uwagi</a>
+                <div class="wysuwana_zawartosc">
+                    <button class="guzik_wysuwania active">Więcej...</button>
+                    <div class="rozwijana-zawartosc">
+                      <a class='active' href="Formularz_adopcji.html">Formularz adopcyjny</a>
+                      <a href="Kontakt.html">Kontakt i linki</a>
+                      <a href="Koty_w_kulturze.html">Koty w kulturze</a>
+                    </div>
+                  </div>         
+        </nav>
+    </header>
+
+    <nav class="prawe-menu">
+        <ol>
+            <li><a  href="Strona_glowna.html">Strona Główna</a></li>
+            <li><a  href="Rasy_kotow.html">Rasy warte uwagi</a></li>        
+        <li><a class='active' href="#">Więcej...</a>
+        <ul>
+            <li><a class='active' href="Formularz_adopcji.html">Formularz adopcyjny</a></li>
+            <li><a href="Kontakt.html">Kontakt i linki</a></li>
+            <li><a href="Koty_w_kulturze.html">Koty w kulturze</a></li>
+        </ul>
+    </ol>    
+    </nav>
+
+<div class="pojemnik_glowny">
+    <div class="artykuly">
+        <h3>
+        Jeżeli czujesz, że do szczęścia brakuje ci teraz zwierzątka, mam dla ciebie dobrą wiadomość! Lokalne schronisko dla kotów jest pełne tych uroczych istot tylko czekających na nowego opiekuna. Poniżej znajdziesz formularz adopcyjny, dzięki któremu możesz określić swoje preferencje co do samego kota, jak i umożliwisz schronisku wstępną selekcje chętnych. Dzięki niemu schronisko będzie mogło się później z tobą skontaktować i umówić na spotkanie tak, by jak najbardziej sprostać twoim oczekiwaniom. Adoptując kota ze schroniska robisz coś dobrego, a w zamian otrzymujesz dozgonną kocią miłość. 
+		</h3>
+
+    </div>
+    
+        
+	<div class='artykuly'>
+		<object id='serce' data="img/heart.svg" type="image/svg+xml">
+		</object>
+
+		
+		<form id='adopt' method="post" action="action.php">
+			<h2>Formularz adopcyjny</h2>
+			<div>
+			<label  for="name">Imię i nazwisko </label>
+				<input id="name" name="name" type="text"/> 
+				</div>
+				<div>
+			<label  for="age">Wiek </label>
+				<input id="age" name="age"  type="number" placeholder='Ile masz lat?' min='15' max='100'/>
+				</div>
+				<div>
+				<label  for="email">Email </label>
+				<input id="email" name="email"  type="email"/> 
+				</div>
+				<div>
+			<label  for="phone">Telefon </label>
+				<input id="phone" name="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder='123-456-789' type="tel" value=""/> 
+				</div>
+				<div>
+			<label >Płeć kota </label>
+				<input id="male" name="gender"  type="radio" value="1" />
+				<label  for="male">Samiec</label>
+				<input id="female" name="gender"  type="radio" value="2" />
+				<label  for="female">Samica</label>
+				</div>
+				<div>
+			<label >Rasowy? </label>
+				<input id="yes" name="race"  type="checkbox" value="1" />
+				<label  for="yes">Tak</label>
+				<input id="no" name="race" type="checkbox" value="2" />
+				<label  for="no">Nie</label>
+			</div>
+				<div>
+			<label  for="age_cat">Wiek kota: </label>
+			<select id="age_cat" name="age_cat"> 
+				<option value="" disabled selected>Wiek</option>
+				<option value="1" >kocię</option>
+				<option value="2" >dorosły</option>
+				<option value="3" >starszy</option>
+			</select>
+			</div>
+			<div>
+			<label  for="text">Dodatkowe informacje </label>
+				<textarea id="text"  placeholder='opisz siebie, czemu chcesz adoptować kota, czy masz rodzinę, specjalne życzenia co do kota itd…' name="text"></textarea> 
+			</div>
+			<div>        
+				<input type="reset" value="Wyczyść">
+				<input type="submit" value="Wyślij">
+			</div>
+		</form>	
+</div>
+</div>
+<footer><h2>Stworzone przez Katarzynę Szczerbę</h2></footer>
+</body>
+</html>
