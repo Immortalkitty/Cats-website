@@ -16,3 +16,6 @@ Whether you're a cat owner, enthusiast, or simply curious about these fascinatin
 ## Usage
 
 To explore the Cat Facts Website, simply access the Strona_glowna.html file using your web browser. Dive into the world of cats and discover fascinating facts that will delight and educate.
+
+## Author
+Katarzyna Szczerba
